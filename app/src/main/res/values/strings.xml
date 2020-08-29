@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TheCatApp</string>
+
+    <!-- Main Activity -->
+    <!-- Drawer actions -->
+    <!-- Drawer menu -->
+    <string name="label_breeds_title">Breeds</string>
+    <string name="label_gallery_title">Gallery</string>
+    <string name="label_favorites_title">Favorites</string>
+
 </resources>
