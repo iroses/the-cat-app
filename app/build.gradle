@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -45,6 +47,11 @@ dependencies {
     implementation "androidx.appcompat:appcompat:${appCompatVersion}"
     implementation "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}"
     implementation "com.google.android.material:material:${materialVersion}"
+    implementation "androidx.navigation:navigation-fragment-ktx:${navigationVersion}"
+    implementation "androidx.navigation:navigation-ui-ktx:${navigationVersion}"
+    implementation "androidx.legacy:legacy-support-v4:${legacySupportVersion}"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycleVersion}"
 
     // Dependencies for local unit tests
     testImplementation "junit:junit:${junitVersion}"
