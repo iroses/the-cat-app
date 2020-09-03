@@ -10,7 +10,9 @@ import mx.iroses.thecatapp.R
 
 class BreedsFragment : Fragment() {
 
-    private lateinit var viewModel: BreedsViewModel
+    private val viewModel: BreedsViewModel by lazy {
+        ViewModelProvider(this, BreedsViewModelFactory()).get(BreedsViewModel::class.java)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,7 +24,7 @@ class BreedsFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel = ViewModelProvider(this).get(BreedsViewModel::class.java)
+        viewModel.loadBreeds()
     }
 
     companion object {
