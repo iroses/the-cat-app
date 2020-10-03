@@ -1,5 +1,6 @@
 package mx.iroses.thecatapp.ui.breeds
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,7 +18,11 @@ class BreedsFragment : Fragment() {
     }
 
     private val breedsAdapter: BreedsAdapter by lazy {
-        BreedsAdapter()
+        BreedsAdapter {
+            startActivity(Intent(context, BreedDetailsActivity::class.java).apply {
+                putExtra(BreedDetailsFragment.ARG_BREED, it)
+            })
+        }
     }
 
     override fun onCreateView(
