@@ -8,4 +8,9 @@
     <string name="label_gallery_title">Gallery</string>
     <string name="label_favorites_title">Favorites</string>
 
+    <!-- Breeds -->
+    <!-- Detail -->
+    <string name="label_id">id: %1$s</string>
+    <string name="label_kgs">%1$s minutes ago</string>
+    <string name="label_avg_life_span">%1$s average life span</string>
 </resources>

@@ -24,8 +24,10 @@
 
     </style>
 
-    <style name="Theme.TheCatApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.TheCatApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="TheCatApp.Toolbar" parent="Theme.TheCatApp">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
 
 </resources>
