@@ -20,14 +20,6 @@ data class Breed(
 ) : Parcelable
 
 @Parcelize
-data class Image(
-    val id: String,
-    val width: Int,
-    val height: Int,
-    val url: String?
-) : Parcelable
-
-@Parcelize
 data class Weight(
     val imperial: String,
     val metric: String
